@@ -15,9 +15,6 @@
       type="image/x-icon"
       href="https://devchallenges.io/"
     />
-
-    <link rel="stylesheet" href="styles.css" />
-
     <title>Interior Consultant</title>
     <!-- CSS only -->
     <link
@@ -26,43 +23,79 @@
       integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl"
       crossorigin="anonymous"
     />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/styles.css" />
   </head>
 
   <body>
-    <header>
-      <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="#">Navbar</a>
-          <button
-            class="navbar-toggler"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#interiorNavbar"
-            aria-controls="interiorNavbar"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="interiorNavbar">
-            <div class="navbar-nav">
-              <a class="nav-link active" aria-current="page" href="#">Home</a>
-              <a class="nav-link" href="#">Features</a>
-              <a class="nav-link" href="#">Pricing</a>
-              <a
-                class="nav-link disabled"
-                href="#"
-                tabindex="-1"
-                aria-disabled="true"
-                >Disabled</a
-              >
+    <div id="app">
+      <header>
+        <nav class="navbar navbar-expand-lg">
+          <div class="container-fluid">
+            <a class="navbar-brand" href="#">This Interior</a>
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#interiorNav"
+              aria-controls="interiorNav"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="interiorNav">
+              <ul class="navbar-nav">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="#"
+                    >Home</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Collection</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">About</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Contact</a>
+                </li>
+              </ul>
             </div>
           </div>
+        </nav>
+      </header>
+      <main>
+        <div class="main">
+          <section id="display-text">
+            <h1>Modern interior</h1>
+            <p>
+              A full-Service residential & commercial interior design and
+              staging company offering professional organizing & eco-services.
+            </p>
+            <a href="#">Read more </a>
+            <span class="material-icons icon">arrow_right_alt</span>
+          </section>
+
+          <section id="display-image">
+            <div class="image"></div>
+          </section>
         </div>
-      </nav>
-    </header>
-    <main></main>
-    <footer></footer>
+        <aside>
+          <img src="/images/photo2.png" alt="" />
+          <h6>Aliza Webber</h6>
+          <p>Interior designer</p>
+          <p class="design">Designed in 2020 by Aliza Webber</p>
+        </aside>
+      </main>
+
+      <footer>
+        <p>created by darkcode__ - devChallenges.io</p>
+      </footer>
+    </div>
 
     <!-- JavaScript Bundle with Popper -->
     <script
